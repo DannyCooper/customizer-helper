@@ -47,18 +47,18 @@ Range
 Panels are the top of the hierarchy and hold one or more sections.
 
 ```php
-	// Panel Example.
-	$panel    = 'panel'; // Panel ID.
-	$panels[] = array(
-		'id'              => $panel, // Panel ID.
-		'title'           => esc_html__( 'Customizer Helper Panel', 'customizer-helper' ), // Title to show in the UI.
-		'description'     => esc_html__( 'Example panel description.', 'customizer-helper' ), // Description to show in the UI.
-		'priority'        => '1', // Priority of the panel, defining the display order of panels and sections. Default 160.
-		'capability'      => 'edit_theme_options', // Capability required for the panel. Default `edit_theme_options`
-		'theme_supports'  => '', // Theme features required to support the panel.
-		'type'            => '', // Type of the panel.
-		'active_callback' => '', // Active callback.
-	);
+// Panel Example.
+$panel    = 'panel'; // Panel ID.
+$panels[] = array(
+	'id'              => $panel, // Panel ID.
+	'title'           => esc_html__( 'Customizer Helper Panel', 'customizer-helper' ), // Title to show in the UI.
+	'description'     => esc_html__( 'Example panel description.', 'customizer-helper' ), // Description to show in the UI.
+	'priority'        => '1', // Priority of the panel, defining the display order of panels and sections. Default 160.
+	'capability'      => 'edit_theme_options', // Capability required for the panel. Default `edit_theme_options`
+	'theme_supports'  => '', // Theme features required to support the panel.
+	'type'            => '', // Type of the panel.
+	'active_callback' => '', // Active callback.
+);
 ```
 
 ## Sections
